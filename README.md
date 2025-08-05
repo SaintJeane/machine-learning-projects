@@ -1,1 +1,1 @@
-My machine learning tutorial notebooks and files.
+My machine learning project notebooks and files.
