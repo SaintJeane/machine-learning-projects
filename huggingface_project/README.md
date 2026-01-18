@@ -53,18 +53,6 @@ Open the desired notebook and follow the instructions inside.
 ## Results
 
 Results, sample outputs, and evaluation metrics can be found in the corresponding notebook outputs.  
-To contribute results or enhancements, please fork the repository and open a pull request.
-
-## Contributing
-
-Pull requests and suggestions are welcome! Please ensure any new notebooks:
-- Use Huggingface datasets or models.
-- Include clear instructions and comments.
-- Save outputs and results where appropriate.
-
-## License
-
-This project is licensed under the MIT License.
 
 ## References
 
