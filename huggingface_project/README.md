@@ -1,14 +1,14 @@
 # Huggingface Project
 
-This subfolder contains projects leveraging the Huggingface ecosystem for dataset creation and model training on image and text data.
+This subfolder contains projects leveraging the Huggingface ecosystem for dataset creation and model training on text data.
 
 ## Contents
 
-- **huggingface_food_not_food_image_caption_dataset_creation.ipynb**  
+- **[huggingface_food_not_food_image_caption_dataset_creation.ipynb](https://github.com/SaintJeane/machine-learning-projects/blob/main/huggingface_project/huggingface_food_not_food_image_caption_dataset_creation.ipynb)**  
   Jupyter notebook for generating an image captioning dataset that distinguishes food from non-food items. Includes code for scraping, preprocessing, and dataset formatting compatible with Huggingface Datasets.
 
-- **huggingface_text_classification.ipynb**  
-  Jupyter notebook for building and training a text classification model using Huggingface Transformers. Covers data loading, preprocessing, model selection, fine-tuning, evaluation, and export.
+- **[huggingface_text_classification.ipynb](https://github.com/SaintJeane/machine-learning-projects/blob/main/huggingface_project/huggingface_text_classification.ipynb)**  
+  Jupyter notebook for building and training a text classification model using Huggingface Transformers. Covers data loading, preprocessing, model selection, fine-tuning, evaluation, and deployment.
 
 ## Getting Started
 
@@ -39,15 +39,16 @@ Open the desired notebook and follow the instructions inside.
 ## Notebooks Overview
 
 ### 1. Image Caption Dataset Creation
-- Scrapes or loads image data.
+- Synthetic generation of text dataset for food and non-food texts.
 - Assigns captions for food/not-food detection.
 - Prepares and exports the dataset in Huggingface-compatible format.
 
 ### 2. Text Classification
 - Loads text data for classification tasks.
-- Preprocesses and tokenizes text using Huggingface tools.
-- Selects and fine-tunes a Transformer model.
-- Evaluates performance and saves results.
+- Preprocesses and tokenizes text using Huggingface `distilbert`.
+- Selects and fine-tunes HuggingFace Transformer model `distilbert-base-uncased`.
+- Evaluates performance and saves the results and the trained model.
+- Deploy the trained model to [HuggingFace Spaces using Gradio interface](https://huggingface.co/spaces/Saint5/hg_tutorial_food_not_food_text_classifier_demo).
 
 ## Results
 
