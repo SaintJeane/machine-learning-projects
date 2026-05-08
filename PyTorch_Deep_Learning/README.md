@@ -37,8 +37,14 @@ The emphasis is on:
 * **[04 — Custom Dataset Patterns](https://github.com/SaintJeane/machine-learning-projects/blob/main/PyTorch_Deep_Learning/04_PyTorch_Computer_Vision_Customized_Dataset.ipynb)**
   Implementing custom `Dataset` and `DataLoader` classes for non-standard data layouts.
 
+* **[05 — Creating Modular Helper Functions](___)**
+  **Not yet implemented hence not included** but the logic is applied in the following sections.
+
 * **[06 — Transfer Learning](https://github.com/SaintJeane/machine-learning-projects/blob/main/PyTorch_Deep_Learning/06_PyTorch_transfer_learning.ipynb)**
   Fine-tuning pretrained backbones and exploring freezing/unfreezing strategies for efficient training.
+
+* **[07 — Experiment Tracking](https://github.com/SaintJeane/machine-learning-projects/blob/main/PyTorch_Deep_Learning/07_Experiment_tracking.ipynb)**
+  Experiment tracking and comparing the results logs of the two image classifier models using `TensorBoard`.
 
 * **[08 — Vision Transformers (ViT)](https://github.com/SaintJeane/machine-learning-projects/blob/main/PyTorch_Deep_Learning/08_ViT_for_foodvision_using_PyTorch.ipynb)**
   Applying transformer-based architectures to food image classification tasks.
@@ -82,6 +88,9 @@ Dataset downloads and preparation are handled programmatically within notebooks 
 ## Models & Architectures
 
 * **CNN-based models** (introductory CV notebooks)
+    - **TinyVGG** - creating from scratch for image classification
+    - **EfficientNetB0** - using pretrained model weights and architecture for inference.
+  
 * **EfficientNet-B2**
 
   * Used as a pretrained feature extractor
