@@ -1,26 +1,29 @@
 # Machine Learning Projects
 
-<!-- Technology & Framework Badges -->
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37726?style=flat&logo=jupyter&logoColor=white)
-![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat&logo=huggingface&logoColor=black)
-![Gradio](https://img.shields.io/badge/Gradio-FDB75C?style=flat&logo=gradio&logoColor=black)
+<p align="center">
 
-<!-- Domain & Topic Badges -->
-![Computer Vision](https://img.shields.io/badge/Computer%20Vision-0085CA?style=flat)
-![NLP](https://img.shields.io/badge/NLP-013243?style=flat)
-![Vision Transformer](https://img.shields.io/badge/Vision%20Transformer-FF6F00?style=flat)
-![EfficientNet](https://img.shields.io/badge/EfficientNet-000000?style=flat)
-![DistilBERT](https://img.shields.io/badge/DistilBERT-FFD21E?style=flat&logo=huggingface&logoColor=black)
-![Transfer Learning](https://img.shields.io/badge/Transfer%20Learning-0C66E4?style=flat)
-![Deep Learning](https://img.shields.io/badge/Deep%20Learning-AA0000?style=flat)
+  <!-- Core Frameworks -->
+  <img src="https://img.shields.io/badge/PyTorch-FF4C4C?style=flat&logo=pytorch&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TorchVision-FF4C4C?style=flat&logo=pytorch&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-4B8BBE?style=flat&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Jupyter-F28500?style=flat&logo=jupyter&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Google%20Colab-F9AB00?style=flat&logo=googlecolab&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat&logo=huggingface&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Gradio-FF6F00?style=flat&logo=gradio&logoColor=white"/>
 
-<!-- Additional Badges -->
-![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=flat)
-<!-- ![Last Updated](https://img.shields.io/github/last-commit/SaintJeane/machine-learning-projects?style=flat) -->
-<!-- ![Stars](https://img.shields.io/github/stars/SaintJeane/machine-learning-projects?style=flat) -->
+  <!-- Models -->
+  <img src="https://img.shields.io/badge/Vision%20Transformer-9C27B0?style=flat&logoColor=white"/>
+  <img src="https://img.shields.io/badge/EfficientNet-607D8B?style=flat&logoColor=white"/>
+  <img src="https://img.shields.io/badge/DistilBERT-FFC107?style=flat&logo=huggingface&logoColor=black"/>
+
+  <!-- Concepts & Meta -->
+  <img src="https://img.shields.io/badge/Computer%20Vision-2196F3?style=flat&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NLP-26A69A?style=flat&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Transfer%20Learning-00BCD4?style=flat&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Deep%20Learning-E91E63?style=flat&logoColor=white"/>
+  <img src="https://img.shields.io/badge/License-Apache%202.0-9E9E9E?style=flat&logoColor=white"/>
+
+</p>
 
 
 This repository showcases a collection of end-to-end machine learning projects demonstrating practical experience across experiment tracking and model development, training, evaluation, and deployment.
