@@ -1,6 +1,6 @@
-# Huggingface Project
+# Food vs. Not Food Text Classifier System
 
-This subfolder contains projects leveraging the Huggingface ecosystem for dataset creation and model training on text data.
+This subfolder contains a binary text classifier system leveraging the Huggingface ecosystem for dataset creation and model training on text data.
 
 ## Contents
 
@@ -10,31 +10,6 @@ This subfolder contains projects leveraging the Huggingface ecosystem for datase
 - **[huggingface_text_classification.ipynb](https://github.com/SaintJeane/machine-learning-projects/blob/main/huggingface_project/huggingface_text_classification.ipynb)**  
   Jupyter notebook for building and training a text classification model using Huggingface Transformers. Covers data loading, preprocessing, model selection, fine-tuning, evaluation, and deployment.
 
-## Getting Started
-
-### Prerequisites
-
-- Python 3.8+
-- `transformers`
-- `datasets`
-- `torch`
-- `jupyter`
-- (Optional) `scikit-learn`, `matplotlib`, and other supporting libraries
-
-Install dependencies:
-```bash
-pip install transformers datasets torch jupyter scikit-learn matplotlib
-```
-
-### Usage
-
-Clone the repository and launch Jupyter:
-```bash
-git clone https://github.com/SaintJeane/machine-learning-projects.git
-cd machine-learning-projects/huggingface_project
-jupyter notebook
-```
-Open the desired notebook and follow the instructions inside.
 
 ## Notebooks Overview
 

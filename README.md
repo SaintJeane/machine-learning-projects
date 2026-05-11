@@ -16,12 +16,12 @@ The projects span multiple domains, including:
 - Experiment tracking using `TensorBoard`.
 - Experimentation with various computer vision model architectures (ViT, EffNetB2).
 - Model deployment and inference pipelines using Gradio
-- Hugging Face–based NLP and multimodal workflows
+- Hugging Face–based NLP text classification workflows
 
 ## Repository Structure
 
 ```text
-├── PyTorch_Deep_Learning/
+├── image_classification_system_project/
 │   ├── 01_PyTorch_tutorial.ipynb
 │   ├── 02_Classification_Using_PyTorch.ipynb
 │   ├── 03_PyTorch_Computer_Vision.ipynb
@@ -31,7 +31,7 @@ The projects span multiple domains, including:
 │   ├── 08_ViT_for_foodvision_using_PyTorch.ipynb
 │   ├── 09_model_deployment.ipynb
 │   └── README.md
-├── huggingface_project/
+├── binary_text_classifier_system/
 │   ├── huggingface_text_classification.ipynb
 │   ├── huggingface_food_not_food_image_caption_dataset_creation.ipynb
 │   └── README.md

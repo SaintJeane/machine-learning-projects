@@ -1,12 +1,13 @@
-# PyTorch Deep Learning
+# Image Classification Project
 
-This directory contains a structured, hands-on PyTorch portfolio demonstrating end-to-end deep learning workflows.  
+This directory contains a structured, hands-on computer vision project using PyTorch.  
 The notebooks progress from PyTorch fundamentals to applied computer vision, transfer learning, Vision Transformers (ViT), and a deployment-focused inference demo.
 
 The emphasis is on:
 - Clean PyTorch abstractions (Dataset, DataLoader, training loops)
 - Reproducible experimentation
 - Practical use of pretrained models
+- Experiment tracking of various models' train and test accuracies and losses.
 - Performance-aware deployment considerations
 
 ---
@@ -19,6 +20,7 @@ The emphasis is on:
 03_PyTorch_Computer_Vision.ipynb
 04_PyTorch_Computer_Vision_Customized_Dataset.ipynb
 06_PyTorch_transfer_learning.ipynb
+07_Experiment_tracking.ipynb
 08_ViT_for_foodvision_using_PyTorch.ipynb
 09_model_deployment.ipynb
 ```
@@ -50,7 +52,7 @@ The emphasis is on:
   Applying transformer-based architectures to food image classification tasks.
 
 * **[09 — Model Deployment](https://github.com/SaintJeane/machine-learning-projects/blob/main/PyTorch_Deep_Learning/09_model_deployment.ipynb)**
-  Comparing EfficientNet and ViT models under accuracy and latency constraints, and demonstrating a minimal inference/deployment workflow.
+  Comparing EfficientNet and ViT models under accuracy and latency constraints, and demonstrating a minimal inference/deployment workflow into HuggingFace environment using Gradio app.
 
 ---
 
@@ -70,13 +72,13 @@ The emphasis is on:
 
 ## Datasets Used
 
-* **[pizza_steak_sushi_20_percent](https://docs.pytorch.org/vision/main/generated/torchvision.datasets.Food101.html)**
+* **[torchvision food 101 dataset](https://docs.pytorch.org/vision/main/generated/torchvision.datasets.Food101.html)**
 
-  * 20% of Torchvision 101 Food Dataset
+  * Torchvision 101 food classes Food Dataset
   * Used in transfer learning and deployment experiments
   * Train/test directory-based structure
 
-* **[FashionMNIST](https://docs.pytorch.org/vision/0.24/generated/torchvision.datasets.FashionMNIST.html#fashionmnist)**
+* **[FashionMNIST Dataset](https://docs.pytorch.org/vision/0.24/generated/torchvision.datasets.FashionMNIST.html#fashionmnist)**
 
   * Standard torchvision dataset
   * Used for introductory computer vision experiments
@@ -92,11 +94,9 @@ Dataset downloads and preparation are handled programmatically within notebooks 
     - **EfficientNetB0** - using pretrained model weights and architecture for inference.
   
 * **EfficientNet-B2**
-
   * Used as a pretrained feature extractor
   * Evaluated for accuracy–latency tradeoffs
 * **Vision Transformer (ViT-B/16)**
-
   * Applied to food image classification
   * Compared directly against EfficientNet during deployment experiments
 
