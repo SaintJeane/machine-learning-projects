@@ -5,78 +5,45 @@
 </div>
 
 <!-- Core Language & Frameworks -->
-<div align="center" style="text-decoration:none;">
-  <a href="https://www.python.org/" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/Python-3.12%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.12+"/>
-  </a>
-  <a href="https://pytorch.org/" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/PyTorch-Framework-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
-  </a>
-  <a href="https://pytorch.org/vision/stable/" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/TorchVision-Computer%20Vision-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="TorchVision"/>
-  </a>
-  <a href="https://scikit-learn.org/" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/scikit--learn-ML%20Library-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" alt="scikit-learn"/>
-  </a>
+<div align="center">
+
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-Framework-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![TorchVision](https://img.shields.io/badge/TorchVision-Computer%20Vision-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/vision/stable/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-ML%20Library-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+
 </div>
 
 <!-- Development Tools -->
-<div align="center" style="text-decoration:none;">
-  <a href="https://jupyter.org/" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter Notebook"/>
-  </a>
-  <a href="https://colab.research.google.com/" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/Google%20Colab-Cloud%20IDE-F9AB00?style=flat-square&logo=googlecolab&logoColor=black" alt="Google Colab"/>
-  </a>
-  <a href="https://www.tensorflow.org/tensorboard" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/TensorBoard-Experiment%20Tracking-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorBoard"/>
-  </a>
-  <a href="https://huggingface.co/" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/Hugging%20Face-Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face"/>
-  </a>
-  <a href="https://www.gradio.app/" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/Gradio-Deployment-F97316?style=flat-square&logo=gradio&logoColor=white" alt="Gradio"/>
-  </a>
+<div align="center">
+
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Google Colab](https://img.shields.io/badge/Google%20Colab-Cloud%20IDE-F9AB00?style=flat-square&logo=googlecolab&logoColor=black)](https://colab.research.google.com/)
+[![TensorBoard](https://img.shields.io/badge/TensorBoard-Experiment%20Tracking-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/tensorboard)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/)
+[![Gradio](https://img.shields.io/badge/Gradio-Deployment-F97316?style=flat-square&logo=gradio&logoColor=white)](https://www.gradio.app/)
+
 </div>
 
-<!-- Models -->
-<div align="center" style="text-decoration:none;">
-  <a href="https://arxiv.org/abs/2010.11929" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/Vision%20Transformer-ViT-8E44AD?style=flat-square" alt="Vision Transformer"/>
-  </a>
-  <a href="https://arxiv.org/abs/1905.11946" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/EfficientNet-CNN-607D8B?style=flat-square" alt="EfficientNet"/>
-  </a>
-  <a href="https://huggingface.co/docs/transformers/model_doc/distilbert" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/DistilBERT-NLP-FFC107?style=flat-square&logo=huggingface&logoColor=black" alt="DistilBERT"/>
-  </a>
-</div>
+<!-- Models & Domains -->
+<div align="center">
 
-<!-- Domains -->
-<div align="center" style="text-decoration:none;">
-  <a href="https://en.wikipedia.org/wiki/Computer_vision" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/Computer%20Vision-Image%20Classification-2196F3?style=flat-square" alt="Computer Vision"/>
-  </a>
-  <a href="https://en.wikipedia.org/wiki/Natural_language_processing" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/NLP-Text%20Classification-26A69A?style=flat-square" alt="Natural Language Processing"/>
-  </a>
-  <a href="https://en.wikipedia.org/wiki/Transfer_learning" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/Transfer%20Learning-Fine--Tuning-00BCD4?style=flat-square" alt="Transfer Learning"/>
-  </a>
-  <a href="https://en.wikipedia.org/wiki/Deep_learning" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/Deep%20Learning-Neural%20Networks-E91E63?style=flat-square" alt="Deep Learning"/>
-  </a>
+[![Vision Transformer](https://img.shields.io/badge/Vision%20Transformer-ViT-8E44AD?style=flat-square)](https://arxiv.org/abs/2010.11929)
+[![EfficientNet](https://img.shields.io/badge/EfficientNet-CNN-607D8B?style=flat-square)](https://arxiv.org/abs/1905.11946)
+[![DistilBERT](https://img.shields.io/badge/DistilBERT-NLP-FFC107?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/docs/transformers/model_doc/distilbert)
+[![Computer Vision](https://img.shields.io/badge/Computer%20Vision-Image%20Classification-2196F3?style=flat-square)](https://en.wikipedia.org/wiki/Computer_vision)
+[![NLP](https://img.shields.io/badge/NLP-Text%20Classification-26A69A?style=flat-square)](https://en.wikipedia.org/wiki/Natural_language_processing)
+[![Transfer Learning](https://img.shields.io/badge/Transfer%20Learning-Fine--Tuning-00BCD4?style=flat-square)](https://en.wikipedia.org/wiki/Transfer_learning)
+[![Deep Learning](https://img.shields.io/badge/Deep%20Learning-Neural%20Networks-E91E63?style=flat-square)](https://en.wikipedia.org/wiki/Deep_learning)
+
 </div>
 
 <!-- License -->
-<div align="center" style="text-decoration:none;">
-  <a href="./LICENSE" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/License-Apache%202.0-9E9E9E?style=flat-square" alt="Apache License 2.0"/>
-  </a>
+<div align="center">
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-9E9E9E?style=flat-square)](./LICENSE)
+
 </div>
-
-
-
 
 
 This repository showcases a collection of end-to-end machine learning projects demonstrating practical experience across experiment tracking and model development, training, evaluation, and deployment.
