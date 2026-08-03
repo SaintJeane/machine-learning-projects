@@ -1,7 +1,7 @@
+# Machine Learning Projects
+
 <p align="center">
 
-  # Machine Learning Projects
-  
   <!-- Language -->
   <a href="https://www.python.org/" target="_blank">
     <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
@@ -14,11 +14,11 @@
   <a href="https://pytorch.org/vision/stable/" target="_blank">
     <img src="https://img.shields.io/badge/TorchVision-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="TorchVision"/>
   </a>
-  <a href="https://www.tensorflow.org/tensorboard">
-  <img src="https://img.shields.io/badge/TensorBoard-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorBoard"/>
+  <a href="https://www.tensorflow.org/tensorboard" target="_blank">
+    <img src="https://img.shields.io/badge/TensorBoard-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorBoard"/>
   </a>
-  <a href="https://scikit-learn.org/">
-    <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn"/>
+  <a href="https://scikit-learn.org/" target="_blank">
+    <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" alt="scikit-learn"/>
   </a>
 
   <!-- Development Tools -->
@@ -66,6 +66,7 @@
   </a>
 
 </p>
+
 
 
 This repository showcases a collection of end-to-end machine learning projects demonstrating practical experience across experiment tracking and model development, training, evaluation, and deployment.
