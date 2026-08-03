@@ -4,11 +4,9 @@ This subfolder contains a binary text classifier system leveraging the Huggingfa
 
 ## Contents
 
-- **[huggingface_food_not_food_image_caption_dataset_creation.ipynb](https://github.com/SaintJeane/machine-learning-projects/blob/main/huggingface_project/huggingface_food_not_food_image_caption_dataset_creation.ipynb)**  
-  Jupyter notebook for generating an image captioning dataset that distinguishes food from non-food items. Includes code for scraping, preprocessing, and dataset formatting compatible with Huggingface Datasets.
+- **[huggingface_food_not_food_image_caption_dataset_creation.ipynb](huggingface_food_not_food_image_caption_dataset_creation.ipynb)**: Jupyter notebook for generating an image captioning dataset that distinguishes food from non-food items. Includes code for scraping, preprocessing, and dataset formatting compatible with HuggingFace Datasets.
 
-- **[huggingface_text_classification.ipynb](https://github.com/SaintJeane/machine-learning-projects/blob/main/huggingface_project/huggingface_text_classification.ipynb)**  
-  Jupyter notebook for building and training a text classification model using Huggingface Transformers. Covers data loading, preprocessing, model selection, fine-tuning, evaluation, and deployment.
+- **[huggingface_text_classification.ipynb](huggingface_text_classification.ipynb)**: Jupyter notebook for building and training a text classification model using Huggingface Transformers. Covers data loading, preprocessing, model selection, fine-tuning, evaluation, and deployment.
 
 
 ## Notebooks Overview

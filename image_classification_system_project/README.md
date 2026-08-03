@@ -1,7 +1,8 @@
 # Image Classification Project
 
-This directory contains a structured, hands-on computer vision project using PyTorch.  
-The notebooks progress from PyTorch fundamentals to applied computer vision, transfer learning, Vision Transformers (ViT), and a deployment-focused inference demo.
+Practical, hands-on computer vision experiments in PyTorch: from PyTorch fundamentals to transfer learning, Vision Transformers (ViT), experiment tracking, and a minimal deployment demo.
+
+This directory contains Jupyter notebooks that walk through dataset preparation, training loops, model evaluation, experiment tracking (TensorBoard), and a simple Gradio-based inference demo.
 
 The emphasis is on:
 - Clean PyTorch abstractions (Dataset, DataLoader, training loops)
@@ -12,61 +13,62 @@ The emphasis is on:
 
 ---
 
-## Notebook Overview
-
-```text
-01_PyTorch_tutorial.ipynb
-02_Classification_Using_PyTorch.ipynb
-03_PyTorch_Computer_Vision.ipynb
-04_PyTorch_Computer_Vision_Customized_Dataset.ipynb
-06_PyTorch_transfer_learning.ipynb
-07_Experiment_tracking.ipynb
-08_ViT_for_foodvision_using_PyTorch.ipynb
-09_model_deployment.ipynb
+## File structure (this directory)
+```
+image_classification_system_project/
+├─ 01_PyTorch_tutorial.ipynb
+├─ 02_Classification_Using_PyTorch.ipynb
+├─ 03_PyTorch_Computer_Vision.ipynb
+├─ 04_PyTorch_Computer_Vision_Customized_Dataset.ipynb
+├─ 06_PyTorch_transfer_learning.ipynb
+├─ 07_Experiment_tracking.ipynb
+├─ 08_ViT_for_foodvision_using_PyTorch.ipynb
+├─ 09_model_deployment.ipynb
+└─ README.md
 ```
 
-### High-level progression
+---
 
-* **[01 — PyTorch Fundamentals](https://github.com/SaintJeane/machine-learning-projects/blob/main/PyTorch_Deep_Learning/01_PyTorch_tutorial.ipynb)**
-  Core PyTorch primitives, tensor operations, and autograd mechanics.
+## Notebooks Overview
 
-* **[02 — Classification Pipeline](https://github.com/SaintJeane/machine-learning-projects/blob/main/PyTorch_Deep_Learning/02_Classification_Using_PyTorch.ipynb)**
-  End-to-end supervised learning workflow: datasets, data loaders, training loop, and evaluation structure.
+* **[01 - PyTorch Fundamentals](01_pytorch_tutorial.ipynb)**: Entails core PyTorch primitives, tensor operations, and autograd mechanics. It's all about PyTorch's basics.
 
-* **[03 — Computer Vision Basics](https://github.com/SaintJeane/machine-learning-projects/blob/main/PyTorch_Deep_Learning/03_PyTorch_Computer_Vision.ipynb)**
-  Vision datasets, transforms, visualization, and CNN-based experimentation using `torchvision`.
+* **[02 - Classification Pipeline](02_classification_using_pytorch.ipynb)**: Entails end-to-end supervised learning workflow: datasets, data loaders, training loop, and evaluation structure.
 
-* **[04 — Custom Dataset Patterns](https://github.com/SaintJeane/machine-learning-projects/blob/main/PyTorch_Deep_Learning/04_PyTorch_Computer_Vision_Customized_Dataset.ipynb)**
-  Implementing custom `Dataset` and `DataLoader` classes for non-standard data layouts.
+* **[03 - Computer Vision Basics](03_pytorch_computer_vision.ipynb)**: Vision datasets, transforms, visualization, and CNN-based experimentation using `torchvision`.
 
-* **[05 — Creating Modular Helper Functions](___)**
-  **Not yet implemented hence not included** but the logic is applied in the following sections.
+* **[04 - Custom Dataset Patterns](04_pytorch_computer_vision_customized_dataset.ipynb)**: Implementing custom dataset and DataLoader classes for non-standard data layouts.
 
-* **[06 — Transfer Learning](https://github.com/SaintJeane/machine-learning-projects/blob/main/PyTorch_Deep_Learning/06_PyTorch_transfer_learning.ipynb)**
-  Fine-tuning pretrained backbones and exploring freezing/unfreezing strategies for efficient training.
+* **[05 - Creating Modular Helper Functions](___)**: Creating modular scripts for re-using in other projects (logic is applied in the following projects).
 
-* **[07 — Experiment Tracking](https://github.com/SaintJeane/machine-learning-projects/blob/main/PyTorch_Deep_Learning/07_Experiment_tracking.ipynb)**
-  Experiment tracking and comparing the results logs of the two image classifier models using `TensorBoard`.
+* **[06 - Transfer Learning](06_pytorch_transfer_learning.ipynb)**: Fine-tuning pretrained backbones and exploring freezing/unfreezing strategies for efficient training.
 
-* **[08 — Vision Transformers (ViT)](https://github.com/SaintJeane/machine-learning-projects/blob/main/PyTorch_Deep_Learning/08_ViT_for_foodvision_using_PyTorch.ipynb)**
-  Applying transformer-based architectures to food image classification tasks.
+* **[07 - Experiment Tracking](07_experiment_tracking.ipynb)**: Experiment tracking and comparing the results logs of the two image classifier models using `TensorBoard`.
 
-* **[09 — Model Deployment](https://github.com/SaintJeane/machine-learning-projects/blob/main/PyTorch_Deep_Learning/09_model_deployment.ipynb)**
-  Comparing EfficientNet and ViT models under accuracy and latency constraints, and demonstrating a minimal inference/deployment workflow into HuggingFace environment using Gradio app.
+* **[08 - Vision Transformers (ViT)](08_ViT_for_foodvision_using_pytorch.ipynb)**: Applying transformer-based architectures to food image classification tasks.
+
+* **[09 - Model Deployment](09_model_deployment.ipynb)**: Deployment-oriented experiments, accuracy vs latency comparisons, and a Gradio inference demo.
 
 ---
 
 ## Environment & Runtime
 
-* **Frameworks**
+* **Frameworks and Libraries**
 
-  * PyTorch: `2.6.0+cu124`
-  * TorchVision: `0.21.0+cu124`
+  * PyTorch
+  * TorchVision
+  * TensorBoard
+  * OpenCV - Python
+  * Scikit-Learn
+  * Gradio
+  * Numpy
+  * Pandas
+  * Matplotlib
 
 * **Device handling**
 
   * Dynamic device selection (`cuda` if available, otherwise `cpu`)
-  * Experiments are GPU-accelerated when CUDA is available
+  * Experiments are GPU-accelerated when CUDA is available (recommendable)
 
 ---
 
@@ -90,7 +92,7 @@ Dataset downloads and preparation are handled programmatically within notebooks 
 ## Models & Architectures
 
 * **CNN-based models** (introductory CV notebooks)
-    - **TinyVGG** - creating from scratch for image classification
+    - **TinyVGG** - creating from scratch for image classification - educational baseline.
     - **EfficientNetB0** - using pretrained model weights and architecture for inference.
   
 * **EfficientNet-B2**
@@ -104,7 +106,7 @@ Dataset downloads and preparation are handled programmatically within notebooks 
 
 ## Deployment-Oriented Experiment
 
-The final notebook focuses explicitly on deployment constraints:
+The [final notebook](09_model_deployment.ipynb) focuses explicitly on deployment constraints:
 
 * **Target accuracy:** ≥ 95%
 * **Target inference speed:** ≥ 30 FPS

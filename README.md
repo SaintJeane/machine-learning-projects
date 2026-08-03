@@ -1,27 +1,69 @@
-# Machine Learning Projects
-
 <p align="center">
 
-  <!-- Core Frameworks -->
-  <img src="https://img.shields.io/badge/PyTorch-FF4C4C?style=flat&logo=pytorch&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TorchVision-FF4C4C?style=flat&logo=pytorch&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Python-4B8BBE?style=flat&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Jupyter-F28500?style=flat&logo=jupyter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Google%20Colab-F9AB00?style=flat&logo=googlecolab&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat&logo=huggingface&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Gradio-FF6F00?style=flat&logo=gradio&logoColor=white"/>
+  # Machine Learning Projects
+  
+  <!-- Language -->
+  <a href="https://www.python.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  </a>
+
+  <!-- Frameworks -->
+  <a href="https://pytorch.org/" target="_blank">
+    <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
+  </a>
+  <a href="https://pytorch.org/vision/stable/" target="_blank">
+    <img src="https://img.shields.io/badge/TorchVision-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="TorchVision"/>
+  </a>
+  <a href="https://www.tensorflow.org/tensorboard">
+  <img src="https://img.shields.io/badge/TensorBoard-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorBoard"/>
+  </a>
+  <a href="https://scikit-learn.org/">
+    <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn"/>
+  </a>
+
+  <!-- Development Tools -->
+  <a href="https://jupyter.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter"/>
+  </a>
+  <a href="https://colab.research.google.com/" target="_blank">
+    <img src="https://img.shields.io/badge/Google%20Colab-F9AB00?style=flat-square&logo=googlecolab&logoColor=black" alt="Google Colab"/>
+  </a>
+  <a href="https://huggingface.co/" target="_blank">
+    <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face"/>
+  </a>
+  <a href="https://www.gradio.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Gradio-F97316?style=flat-square&logo=gradio&logoColor=white" alt="Gradio"/>
+  </a>
 
   <!-- Models -->
-  <img src="https://img.shields.io/badge/Vision%20Transformer-9C27B0?style=flat&logoColor=white"/>
-  <img src="https://img.shields.io/badge/EfficientNet-607D8B?style=flat&logoColor=white"/>
-  <img src="https://img.shields.io/badge/DistilBERT-FFC107?style=flat&logo=huggingface&logoColor=black"/>
+  <a href="https://arxiv.org/abs/2010.11929" target="_blank">
+    <img src="https://img.shields.io/badge/Vision%20Transformer-8E44AD?style=flat-square&logoColor=white" alt="Vision Transformer"/>
+  </a>
+  <a href="https://arxiv.org/abs/1905.11946" target="_blank">
+    <img src="https://img.shields.io/badge/EfficientNet-607D8B?style=flat-square&logoColor=white" alt="EfficientNet"/>
+  </a>
+  <a href="https://huggingface.co/docs/transformers/model_doc/distilbert" target="_blank">
+    <img src="https://img.shields.io/badge/DistilBERT-FFC107?style=flat-square&logo=huggingface&logoColor=black" alt="DistilBERT"/>
+  </a>
 
-  <!-- Concepts & Meta -->
-  <img src="https://img.shields.io/badge/Computer%20Vision-2196F3?style=flat&logoColor=white"/>
-  <img src="https://img.shields.io/badge/NLP-26A69A?style=flat&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Transfer%20Learning-00BCD4?style=flat&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Deep%20Learning-E91E63?style=flat&logoColor=white"/>
-  <img src="https://img.shields.io/badge/License-Apache%202.0-9E9E9E?style=flat&logoColor=white"/>
+  <!-- Domains & Concepts -->
+  <a href="https://en.wikipedia.org/wiki/Computer_vision" target="_blank">
+    <img src="https://img.shields.io/badge/Computer%20Vision-2196F3?style=flat-square&logoColor=white" alt="Computer Vision"/>
+  </a>
+  <a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank">
+    <img src="https://img.shields.io/badge/NLP-26A69A?style=flat-square&logoColor=white" alt="Natural Language Processing"/>
+  </a>
+  <a href="https://en.wikipedia.org/wiki/Transfer_learning" target="_blank">
+    <img src="https://img.shields.io/badge/Transfer%20Learning-00BCD4?style=flat-square&logoColor=white" alt="Transfer Learning"/>
+  </a>
+  <a href="https://en.wikipedia.org/wiki/Deep_learning" target="_blank">
+    <img src="https://img.shields.io/badge/Deep%20Learning-E91E63?style=flat-square&logoColor=white" alt="Deep Learning"/>
+  </a>
+
+  <!-- License -->
+  <a href="./LICENSE">
+    <img src="https://img.shields.io/badge/License-Apache%202.0-9E9E9E?style=flat-square&logoColor=white" alt="Apache License 2.0"/>
+  </a>
 
 </p>
 
@@ -48,13 +90,13 @@ The projects span multiple domains, including:
 
 ```text
 ├── image_classification_system_project/
-│   ├── 01_PyTorch_tutorial.ipynb
-│   ├── 02_Classification_Using_PyTorch.ipynb
-│   ├── 03_PyTorch_Computer_Vision.ipynb
-│   ├── 04_PyTorch_Computer_Vision_Customized_Dataset.ipynb
-│   ├── 06_PyTorch_transfer_learning.ipynb
-|   ├── 07_Experiment_tracking
-│   ├── 08_ViT_for_foodvision_using_PyTorch.ipynb
+│   ├── 01_pytorch_tutorial.ipynb
+│   ├── 02_classification_using_pytorch.ipynb
+│   ├── 03_pytorch_computer_vision.ipynb
+│   ├── 04_pytorch_computer_vision_customized_dataset.ipynb
+│   ├── 06_pytorch_transfer_learning.ipynb
+|   ├── 07_experiment_tracking
+│   ├── 08_ViT_for_foodvision_using_pytorch.ipynb
 │   ├── 09_model_deployment.ipynb
 │   └── README.md
 ├── binary_text_classifier_system/
