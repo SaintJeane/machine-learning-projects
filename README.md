@@ -45,7 +45,6 @@
 
 </div>
 
-
 This repository showcases a collection of end-to-end machine learning projects demonstrating practical experience across experiment tracking and model development, training, evaluation, and deployment.
 
 The work emphasizes reproducibility, clean experimentation, and best practices, with reusable templates and utility scripts that support real-world machine learning workflows.
@@ -54,13 +53,31 @@ The projects span multiple domains, including:
 - **Computer Vision** — image classification pipelines (e.g., food image classification, Neural Networks, Vision Transformers)
 - **Natural Language Processing (NLP)** — binary text classification and dataset creation
 
+---
+
+## Projects
+
+### 🖼️ [Image Classification System](image_classification_system_project/)
+PyTorch computer vision from fundamentals through transfer learning and Vision Transformers, benchmarking **EfficientNetB2 vs. ViT-B/16** on speed/accuracy tradeoffs, deployed as two live Gradio apps.
+- **Live demos:** [FoodVision Mini](https://saint5-food-vision-mini.hf.space) (3-class) · [FoodVision Big](https://saint5-foodvision-big.hf.space) (101-class Food101)
+- **Result:** ViT hit 98.5% test accuracy vs. EffNetB2's 86.9%, but at ~11x the model size and ~5.7x the CPU inference latency — EfficientNetB2 was the model actually shipped.
+
+### 📝 [Binary Text Classifier System](binary_text_classifier_system/)
+Synthetic dataset creation on the Hugging Face Hub, DistilBERT fine-tuning, and programmatic deployment to Hugging Face Spaces.
+- **Live demo:** [Food / Not-Food Text Classifier](https://huggingface.co/spaces/Saint5/hg_tutorial_food_not_food_text_classifier_demo)
+- **Model:** [`Saint5/hg_tutorial_food_not_food_text_classifier_distilbert_base_uncased`](https://huggingface.co/Saint5/hg_tutorial_food_not_food_text_classifier_distilbert_base_uncased)
+
+Each project folder has its own README with notebook-by-notebook breakdowns, environment details, and full results.
+
+---
+
 ## Technical Focus
 
 - Transfer learning and model fine-tuning
 - Custom dataset creation and preprocessing
-- Training and evaluation workflows in PyTorch.
-- Experiment tracking using `TensorBoard`.
-- Experimentation with various computer vision model architectures (ViT, EffNetB2).
+- Training and evaluation workflows in PyTorch
+- Experiment tracking using `TensorBoard`
+- Experimentation with various computer vision model architectures (ViT, EffNetB2)
 - Model deployment and inference pipelines using Gradio
 - Hugging Face–based NLP text classification workflows
 
@@ -68,20 +85,24 @@ The projects span multiple domains, including:
 
 ```text
 ├── image_classification_system_project/
-│   ├── 01_pytorch_tutorial.ipynb
-│   ├── 02_classification_using_pytorch.ipynb
-│   ├── 03_pytorch_computer_vision.ipynb
-│   ├── 04_pytorch_computer_vision_customized_dataset.ipynb
-│   ├── 06_pytorch_transfer_learning.ipynb
-|   ├── 07_experiment_tracking
-│   ├── 08_ViT_for_foodvision_using_pytorch.ipynb
+│   ├── 01_PyTorch_tutorial.ipynb
+│   ├── 02_Classification_Using_PyTorch.ipynb
+│   ├── 03_PyTorch_Computer_Vision.ipynb
+│   ├── 04_PyTorch_Computer_Vision_Customized_Dataset.ipynb
+│   ├── 06_PyTorch_transfer_learning.ipynb
+│   ├── 07_Experiment_tracking.ipynb
+│   ├── 08_ViT_for_foodvision_using_PyTorch.ipynb
 │   ├── 09_model_deployment.ipynb
 │   └── README.md
 ├── binary_text_classifier_system/
-│   ├── huggingface_text_classification.ipynb
 │   ├── huggingface_food_not_food_image_caption_dataset_creation.ipynb
+│   ├── huggingface_text_classification.ipynb
 │   └── README.md
 ├── README.md
 ├── .gitignore
 └── LICENSE
 ```
+
+## License
+
+Apache 2.0 — see [LICENSE](./LICENSE).

@@ -1,19 +1,46 @@
-# Image Classification Project
+<div align="center">
 
-Practical, hands-on computer vision experiments in PyTorch: from PyTorch fundamentals to transfer learning, Vision Transformers (ViT), experiment tracking, and a minimal deployment demo.
+# Image Classification System
 
-This directory contains Jupyter notebooks that walk through dataset preparation, training loops, model evaluation, experiment tracking (TensorBoard), and a simple Gradio-based inference demo.
+**PyTorch computer vision, end to end** — from tensor fundamentals through transfer learning, Vision Transformers, experiment tracking, and live deployment on Hugging Face Spaces.
 
-The emphasis is on:
-- Clean PyTorch abstractions (Dataset, DataLoader, training loops)
-- Reproducible experimentation
-- Practical use of pretrained models
-- Experiment tracking of various models' train and test accuracies and losses.
-- Performance-aware deployment considerations
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-Framework-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![TorchVision](https://img.shields.io/badge/TorchVision-Computer%20Vision-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/vision/stable/)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Spaces-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/)
+[![Gradio](https://img.shields.io/badge/Gradio-Deployment-F97316?style=flat-square&logo=gradio&logoColor=white)](https://www.gradio.app/)
+
+</div>
 
 ---
 
-## File structure (this directory)
+## Live demos
+
+| Demo | Description | Link |
+|---|---|---|
+| 🍕 **FoodVision Mini** | EfficientNetB2 classifying pizza, steak, or sushi | [Saint5-food-vision-mini.hf.space](https://saint5-food-vision-mini.hf.space) |
+| 🍽️ **FoodVision Big** | EfficientNetB2 classifying all 101 classes of Food101 | [Saint5-foodvision-big.hf.space](https://saint5-foodvision-big.hf.space) |
+
+Both are Gradio apps hosted on Hugging Face Spaces — no setup required, just open the link and upload an image.
+
+---
+
+## Overview
+
+This directory is a progressive build-up of PyTorch computer vision skills, structured as a series of notebooks that each layer a new concept on top of the last:
+
+- Clean PyTorch abstractions (`Dataset`, `DataLoader`, training loops)
+- Reproducible experimentation with fixed seeds
+- Transfer learning with pretrained CNN and Transformer backbones
+- Experiment tracking and model comparison via TensorBoard
+- Performance-aware deployment decisions (accuracy vs. speed vs. model size)
+
+The project culminates in two deployed models — **FoodVision Mini** (3 food classes) and **FoodVision Big** (101 food classes) — each shipped as a Gradio app on Hugging Face Spaces.
+
+---
+
+## Repository structure
+
 ```
 image_classification_system_project/
 ├─ 01_PyTorch_tutorial.ipynb
@@ -27,105 +54,83 @@ image_classification_system_project/
 └─ README.md
 ```
 
----
-
-## Notebooks Overview
-
-* **[01 - PyTorch Fundamentals](01_pytorch_tutorial.ipynb)**: Entails core PyTorch primitives, tensor operations, and autograd mechanics. It's all about PyTorch's basics.
-
-* **[02 - Classification Pipeline](02_classification_using_pytorch.ipynb)**: Entails end-to-end supervised learning workflow: datasets, data loaders, training loop, and evaluation structure.
-
-* **[03 - Computer Vision Basics](03_pytorch_computer_vision.ipynb)**: Vision datasets, transforms, visualization, and CNN-based experimentation using `torchvision`.
-
-* **[04 - Custom Dataset Patterns](04_pytorch_computer_vision_customized_dataset.ipynb)**: Implementing custom dataset and DataLoader classes for non-standard data layouts.
-
-* **[05 - Creating Modular Helper Functions](___)**: Creating modular scripts for re-using in other projects (logic is applied in the following projects).
-
-* **[06 - Transfer Learning](06_pytorch_transfer_learning.ipynb)**: Fine-tuning pretrained backbones and exploring freezing/unfreezing strategies for efficient training.
-
-* **[07 - Experiment Tracking](07_experiment_tracking.ipynb)**: Experiment tracking and comparing the results logs of the two image classifier models using `TensorBoard`.
-
-* **[08 - Vision Transformers (ViT)](08_ViT_for_foodvision_using_pytorch.ipynb)**: Applying transformer-based architectures to food image classification tasks.
-
-* **[09 - Model Deployment](09_model_deployment.ipynb)**: Deployment-oriented experiments, accuracy vs latency comparisons, and a Gradio inference demo.
+> Note: notebook 05 ("Modular Helper Functions") isn't included as a standalone notebook in this folder — its output is the reusable helper scripts (data setup, training/testing engines, seed utilities) consumed by notebooks 06 onward.
 
 ---
 
-## Environment & Runtime
+## Notebooks
 
-* **Frameworks and Libraries**
-
-  * PyTorch
-  * TorchVision
-  * TensorBoard
-  * OpenCV - Python
-  * Scikit-Learn
-  * Gradio
-  * Numpy
-  * Pandas
-  * Matplotlib
-
-* **Device handling**
-
-  * Dynamic device selection (`cuda` if available, otherwise `cpu`)
-  * Experiments are GPU-accelerated when CUDA is available (recommendable)
+| # | Notebook | Covers |
+|---|---|---|
+| 01 | [PyTorch Fundamentals](01_PyTorch_tutorial.ipynb) | Core tensor operations and autograd mechanics |
+| 02 | [Classification Pipeline](02_Classification_Using_PyTorch.ipynb) | End-to-end supervised workflow: datasets, loaders, training loop, evaluation |
+| 03 | [Computer Vision Basics](03_PyTorch_Computer_Vision.ipynb) | `torchvision` datasets, transforms, and a from-scratch CNN (TinyVGG) |
+| 04 | [Custom Dataset Patterns](04_PyTorch_Computer_Vision_Customized_Dataset.ipynb) | Custom `Dataset`/`DataLoader` classes for non-standard data layouts |
+| 06 | [Transfer Learning](06_PyTorch_transfer_learning.ipynb) | Fine-tuning pretrained backbones; layer freezing/unfreezing strategies |
+| 07 | [Experiment Tracking](07_Experiment_tracking.ipynb) | Logging and comparing runs with TensorBoard |
+| 08 | [Vision Transformers (ViT)](08_ViT_for_foodvision_using_PyTorch.ipynb) | Applying ViT-B/16 to food image classification |
+| 09 | [Model Deployment](09_model_deployment.ipynb) | EffNetB2 vs. ViT tradeoff analysis, Gradio demo, Hugging Face Spaces deployment |
 
 ---
 
-## Datasets Used
+## Results: EfficientNetB2 vs. ViT-B/16
 
-* **[torchvision food 101 dataset](https://docs.pytorch.org/vision/main/generated/torchvision.datasets.Food101.html)**
+Both models were fine-tuned as feature extractors on a 20% subset of Food101 (pizza, steak, sushi) and benchmarked on CPU inference, per notebook 09:
 
-  * Torchvision 101 food classes Food Dataset
-  * Used in transfer learning and deployment experiments
-  * Train/test directory-based structure
+| Metric | EfficientNetB2 | ViT-B/16 |
+|---|---|---|
+| Test accuracy | 86.88% | **98.47%** |
+| Test loss | 0.2811 | **0.0644** |
+| Parameters | **7.7M** | 85.8M |
+| Model size | **29 MB** | 327 MB |
+| Avg. CPU inference time | **0.106 s/pred** | 0.603 s/pred |
 
-* **[FashionMNIST Dataset](https://docs.pytorch.org/vision/0.24/generated/torchvision.datasets.FashionMNIST.html#fashionmnist)**
-
-  * Standard torchvision dataset
-  * Used for introductory computer vision experiments
-
-Dataset downloads and preparation are handled programmatically within notebooks or via helper utilities.
-
----
-
-## Models & Architectures
-
-* **CNN-based models** (introductory CV notebooks)
-    - **TinyVGG** - creating from scratch for image classification - educational baseline.
-    - **EfficientNetB0** - using pretrained model weights and architecture for inference.
-  
-* **EfficientNet-B2**
-  * Used as a pretrained feature extractor
-  * Evaluated for accuracy–latency tradeoffs
-* **Vision Transformer (ViT-B/16)**
-  * Applied to food image classification
-  * Compared directly against EfficientNet during deployment experiments
+**Takeaway:** ViT is meaningfully more accurate, but at ~11x the parameters, ~11x the model size, and ~5.7x the inference latency of EffNetB2. Against the project's original deployment targets (≥95% accuracy, ≥30 FPS / <0.03s per prediction), neither model hits the latency bar on CPU — a good illustration of why the accuracy/speed tradeoff, not raw accuracy, is what actually drove the deployment choice. **EfficientNetB2 was shipped** for both live demos above, since it stays usably fast on CPU-only Hugging Face Spaces hardware.
 
 ---
 
-## Deployment-Oriented Experiment
+## Environment & tools
 
-The [final notebook](09_model_deployment.ipynb) focuses explicitly on deployment constraints:
-
-* **Target accuracy:** ≥ 95%
-* **Target inference speed:** ≥ 30 FPS
-  (≈ < 0.03s per prediction)
-
-Models are evaluated not only on accuracy but also on suitability for real-time inference scenarios.
+**Frameworks:** PyTorch, TorchVision, TensorBoard, scikit-learn, OpenCV, Gradio
+**Data/plotting:** NumPy, Pandas, Matplotlib
+**Device handling:** dynamic `cuda`/`cpu` selection; notebooks run GPU-accelerated when available (developed on Google Colab's free-tier T4)
 
 ---
 
-## External Utilities & Reuse
+## Datasets
 
-Several notebooks reuse modular helper code sourced from
-[`mrdbourke/pytorch-deep-learning`](https://github.com/SaintJeane/pytorch-deep-learning), including:
+- **[Food101](https://docs.pytorch.org/vision/main/generated/torchvision.datasets.Food101.html)** (`torchvision.datasets`) — used for transfer learning and both deployment demos, including a hand-curated 3-class (pizza/steak/sushi) subset for FoodVision Mini
+- **[FashionMNIST](https://docs.pytorch.org/vision/0.24/generated/torchvision.datasets.FashionMNIST.html)** — used for the introductory CNN/TinyVGG notebooks
 
-* Data setup utilities
-* Training and evaluation engines
-* Reproducibility helpers (seed setting)
-* Visualization utilities
-
-This mirrors real-world workflows where shared training infrastructure is abstracted into reusable modules.
+Datasets are downloaded and prepared programmatically within the notebooks.
 
 ---
+
+## Models
+
+- **TinyVGG** — small CNN built from scratch, educational baseline (notebook 03)
+- **EfficientNetB0 / EfficientNetB2** — pretrained feature extractors, fine-tuned classifier head
+- **ViT-B/16** — pretrained Vision Transformer, fine-tuned classifier head, compared directly against EfficientNetB2 for deployment
+
+---
+
+## Deployment
+
+Notebook 09 packages the winning model (EfficientNetB2) into a Gradio app and ships it to Hugging Face Spaces, in two versions:
+
+- **FoodVision Mini** — 3-class classifier (pizza/steak/sushi), demo app structured as `app.py` + `model.py` + saved `.pth` weights + `requirements.txt`
+- **FoodVision Big** — full 101-class Food101 classifier, same structure plus a `class_names.txt`
+
+The demo source lives inside notebook 09 (cells that write `app.py`/`model.py` via `%%writefile`) rather than as separate committed files, since the packaged app folders are zipped and pushed directly to their respective Hugging Face Spaces.
+
+---
+
+## Credit
+
+Core training/evaluation helper functions (data setup, train/test engines, reproducibility seeding) are adapted from [`mrdbourke/pytorch-deep-learning`](https://github.com/mrdbourke/pytorch-deep-learning), following the accompanying deployment walkthrough.
+
+---
+
+## License
+
+Apache 2.0 — see [LICENSE](../LICENSE) at the repository root.
